@@ -4,7 +4,8 @@
             cron('H 7 * * 1-6')
         }
 
-
+        agent any
+        
         stages {
             stage('Run Tests') {
                 steps {
