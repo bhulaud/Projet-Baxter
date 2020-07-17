@@ -1,0 +1,21 @@
+
+    pipeline {
+        triggers {
+            cron('H 7 * * 1-6')
+        }
+
+
+        stages {
+            stage('Run Tests') {
+                steps {
+                    sh("""cd /home/bhulaud/Documents;
+                          ./test.sh
+END
+                        """)
+                     step([$class: "TapPublisher", testResults: "**/*.tap"])
+                }
+            }
+
+        }
+        options { timestamps () }
+    }
