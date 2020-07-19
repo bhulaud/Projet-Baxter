@@ -4,7 +4,11 @@ import random
 def generateRandomMetric():
 
   with open("metrics.txt",'w') as metricsFile:
+    
+    randomValue = str(random.random())
+    
+    print(randomValue)
   
-    metricsFiles.writelines(str(random.random() + "\n"))
+    metricsFile.writelines(randomValue + "\n")
     
 generateRandomMetric()
