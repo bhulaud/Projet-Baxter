@@ -12,7 +12,7 @@
                     sh("""chmod +x test.sh;\
                           pwd;\
                           ls -l;\
-                          ./test.sh}
+                          ./test.sh
 END
                         """)
                      step([$class: "TapPublisher", testResults: "**/*.tap"])
