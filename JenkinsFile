@@ -9,8 +9,7 @@
         stages {
             stage('Run Tests') {
                 steps {
-                    sh("""cd /home/bhulaud/Documents;
-                          ./test.sh
+                    sh("""./test.sh
 END
                         """)
                      step([$class: "TapPublisher", testResults: "**/*.tap"])
