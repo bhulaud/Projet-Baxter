@@ -9,7 +9,7 @@
         stages {
             stage('Run Tests') {
                 steps {
-                    sh("""chmod +x test.sh;\
+                    sh("""chmod +x test.sh;
                           ./test.sh}
 END
                         """)
