@@ -10,11 +10,11 @@ def analyseMetrics():
       
       if float(lines[0]) > 0.3:
       
-        line = "1..2 \n ok 1 - MOTA \n not ok 2 - MOTP # TODO: not written yet"
+        line = "1..2 \nok 1 - MOTA \nnot ok 2 - MOTP # TODO: not written yet"
 
       else:
       
-        line = "1..2 \n not ok 1 - MOTA \n not ok 2 - MOTP # TODO: not written yet"
+        line = "1..2 \nnot ok 1 - MOTA \nnot ok 2 - MOTP # TODO: not written yet"
 
       resultFile.writelines(line)
       
