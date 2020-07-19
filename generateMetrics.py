@@ -9,6 +9,6 @@ def generateRandomMetric():
     
     print(randomValue)
   
-    metricsFile.writelines(randomValue + "\n")
+    metricsFile.writelines(randomValue)
     
 generateRandomMetric()
